@@ -1,10 +1,11 @@
 Analyze the Apache-style access log at `/app/access.log` and write a JSON report to `/app/report.json`.
 
-The report must be a JSON object with these fields:
+The report must satisfy these criteria:
 
-1. `total_requests`: the number of non-empty log records in `/app/access.log`.
-2. `unique_ips`: the number of distinct client IP addresses. The client IP is the first field on each log line.
-3. `top_path`: the request path that appears most often inside the quoted HTTP request field.
+1. `/app/report.json` exists and contains a JSON object.
+2. `total_requests`: the number of non-empty log records in `/app/access.log`.
+3. `unique_ips`: the number of distinct client IP addresses. The client IP is the first field on each log line.
+4. `top_path`: the request path that appears most often inside the quoted HTTP request field.
 
 For the provided log, the correct report is:
 
